@@ -1,7 +1,7 @@
-all: main.class
+all: compile
 
-Main.class: Main.java
-	@javac Main.java
+compile: Main.java pokemons/Luvdisc.java
+	javac -cp libs/* -d target -sourcepath . Main.java pokemons/*.java
 
-run: Main.class
-	@java Main
+run:
+	java -cp libs/*;target Main

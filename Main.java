@@ -1,8 +1,15 @@
+import pokemons.Luvdisc;
+import ru.ifmo.se.pokemon.*;
+
 public class Main
 {
     public static void main(String[] args)
     {
-        int a = 10;
-        System.out.print(a + "\n");
+        Battle b = new Battle();
+        Pokemon p1 = new Pokemon("Alien", 1);
+        Luvdisc p2 = new Luvdisc("Dio cane", 1);
+        b.addAlly(p1);
+        b.addFoe(p2);
+        b.go();
     }
 }

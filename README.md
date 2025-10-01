@@ -2,6 +2,8 @@
 
 # Notes about compilation:
 
+From: https://www.baeldung.com/java-compile-multiple-files
+
 -> What Is the -cp or -classpath Option?
 
 Using the classpath, we can define a set of directories or files such as *.jar, *.zip that our source code depends on during compilation. Alternatively, we can set the CLASSPATH environment variable.

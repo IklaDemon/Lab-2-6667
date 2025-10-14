@@ -24,9 +24,18 @@ We use this option when we want to have all compiled results in one place, separ
 
 During compilation, this path is used as a root directory, and sub-folders are created automatically according to the package structure of the classes. If this option is not specified, every single *.class file is written next to their corresponding source code *.java file.
 
-# Compilation
+# Compilation for Windows
 
-run the makefile (only for windows at the moment)
+run the makefile
+
+```bash
+make
+make run-windows
+```
+
+# Compilation for Linux
+
+run the makefile
 
 ```bash
 make

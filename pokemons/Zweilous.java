@@ -1,20 +1,15 @@
 package pokemons;
 
 import ru.ifmo.se.pokemon.*;
+import attacks.DoubleHit;
 
-/*
- * Create one of the Pokemon classes for your variant.
- * The class must inherit from the base class Pokemon.
- * In the constructor, you'll need to specify the Pokemon's types and basic stats.
- * After that, try adding the Pokemon to battle.
- */
-
-public class Zweilous extends ru.ifmo.se.pokemon.Pokemon
+public class Zweilous extends Deino
 {
     public Zweilous(String name, int level)
     {
         super(name, level);
         this.setStats(72, 85, 70, 65, 70, 58);
-        this.addType(Type.WATER);
+        this.setType(Type.DARK, Type.DRAGON);
+        this.addMove(new DoubleHit());
     }
 }

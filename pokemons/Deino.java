@@ -1,13 +1,8 @@
 package pokemons;
 
 import ru.ifmo.se.pokemon.*;
-
-/*
- * Create one of the Pokemon classes for your variant.
- * The class must inherit from the base class Pokemon.
- * In the constructor, you'll need to specify the Pokemon's types and basic stats.
- * After that, try adding the Pokemon to battle.
- */
+import attacks.DarkPulse;
+import attacks.ThunderWave;
 
 public class Deino extends ru.ifmo.se.pokemon.Pokemon
 {
@@ -15,6 +10,8 @@ public class Deino extends ru.ifmo.se.pokemon.Pokemon
     {
         super(name, level);
         this.setStats(52, 65, 50, 45, 50, 38);
-        this.addType(Type.WATER);
+        this.setType(Type.DARK, Type.DRAGON);
+        this.addMove(new ThunderWave());
+        this.addMove(new DarkPulse());
     }
 }

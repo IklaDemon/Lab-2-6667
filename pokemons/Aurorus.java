@@ -1,20 +1,16 @@
 package pokemons;
 
+import attacks.Psychic;
 import ru.ifmo.se.pokemon.*;
 
-/*
- * Create one of the Pokemon classes for your variant.
- * The class must inherit from the base class Pokemon.
- * In the constructor, you'll need to specify the Pokemon's types and basic stats.
- * After that, try adding the Pokemon to battle.
- */
-
-public class Aurorus extends ru.ifmo.se.pokemon.Pokemon
+public final class Aurorus extends Amaura
 {
     public Aurorus(String name, int level)
     {
         super(name, level);
+        // hp, attack, defence, special attack, special defence, speed
         this.setStats(123, 77, 72, 99, 92, 58);
-        this.addType(Type.WATER);
+        this.setType(Type.ROCK, Type.ICE);
+        this.addMove(new Psychic());
     }
 }
